@@ -1,8 +1,9 @@
-<div
-  class="panel panel-default">
-  <!--<div class="panel-heading">{{ element.name }}</div>-->
-  <div class="panel-heading" #heading>{{ name }}</div>
-  <div class="panel-body">
-    <ng-content></ng-content>
+<li class="list-group-item d-flex justify-content-between lh-condensed">
+  <div>
+    <h6 class="my-0" #heading>{{ name }}</h6>
+    <small class="text-muted">
+        <ng-content></ng-content>
+    </small>
   </div>
-</div>
+</li>
+  
